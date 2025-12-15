@@ -1,0 +1,53 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="400dp"
+    android:height="600dp"
+    android:viewportWidth="400"
+    android:viewportHeight="600">
+    
+    <!-- Gradient Sky -->
+    <path android:pathData="M0,0h400v600h-400z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startY="0" android:endY="600" android:angle="270">
+                <item android:offset="0" android:color="#FF064E3B"/>
+                <item android:offset="1" android:color="#FF065F46"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- Tree 1 (Back) -->
+    <path android:pathData="M50,600 L150,300 L250,600 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startY="300" android:endY="600" android:angle="270">
+                <item android:offset="0" android:color="#FF10B981"/>
+                <item android:offset="1" android:color="#FF064E3B"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- Tree 2 (Front Right) -->
+    <path android:pathData="M200,600 L300,200 L400,600 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startY="200" android:endY="600" android:angle="270">
+                <item android:offset="0" android:color="#FF34D399"/>
+                <item android:offset="1" android:color="#FF065F46"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- Tree 3 (Front Left) -->
+    <path android:pathData="M-50,600 L100,250 L250,600 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startY="250" android:endY="600" android:angle="270">
+                <item android:offset="0" android:color="#FF6EE7B7"/>
+                <item android:offset="1" android:color="#FF047857"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- Falling Snow (Soft) -->
+    <path android:fillColor="#CCFFFFFF" android:pathData="M50,50 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"/>
+    <path android:fillColor="#CCFFFFFF" android:pathData="M200,80 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"/>
+    <path android:fillColor="#CCFFFFFF" android:pathData="M350,40 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0"/>
+    <path android:fillColor="#CCFFFFFF" android:pathData="M100,150 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"/>
+</vector>

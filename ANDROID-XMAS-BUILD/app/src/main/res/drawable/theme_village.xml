@@ -1,0 +1,49 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="400dp"
+    android:height="600dp"
+    android:viewportWidth="400"
+    android:viewportHeight="600">
+    
+    <!-- Night Sky Gradient -->
+    <path android:pathData="M0,0h400v600h-400z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startY="0" android:endY="400" android:angle="270">
+                <item android:offset="0" android:color="#FF172554"/>
+                <item android:offset="1" android:color="#FF1E3A8A"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Snow Ground with Shadow -->
+    <path android:pathData="M0,400 Q200,350 400,450 v150 h-400 z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startY="400" android:endY="600" android:angle="270">
+                <item android:offset="0" android:color="#FFE0F2FE"/>
+                <item android:offset="1" android:color="#FF94A3B8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- House 1 (3D walls) -->
+    <path android:fillColor="#475569" android:pathData="M50,450 h80 v-80 h-80 z"/>
+    <path android:fillColor="#334155" android:pathData="M50,450 v-80 h-10 L40,450 z"/> <!-- Side Shadow -->
+    <path android:fillColor="#0F172A" android:pathData="M40,370 h100 L90,320 z"/>
+    <path android:fillColor="#FBBF24" android:pathData="M70,400 h20 v20 h-20 z"/>
+
+    <!-- House 2 -->
+    <path android:fillColor="#334155" android:pathData="M250,420 h100 v-100 h-100 z"/>
+    <path android:fillColor="#1E293B" android:pathData="M250,420 v-100 h-10 L240,420 z"/>
+    <path android:fillColor="#0F172A" android:pathData="M240,320 h120 L300,260 z"/>
+    <path android:fillColor="#FBBF24" android:pathData="M280,360 h40 v40 h-40 z"/>
+    
+    <!-- Moon Glow -->
+    <path android:pathData="M320,80 a40,40 0 1,1 0.1,0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:centerX="320" android:centerY="80" android:gradientRadius="50" android:type="radial">
+                <item android:offset="0" android:color="#FFFFFBEB"/>
+                <item android:offset="1" android:color="#00FFFBEB"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

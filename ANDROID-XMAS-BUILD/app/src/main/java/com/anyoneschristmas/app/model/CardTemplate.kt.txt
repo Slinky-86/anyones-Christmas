@@ -1,0 +1,77 @@
+package com.anyoneschristmas.app.model
+
+import androidx.compose.ui.graphics.Color
+import com.anyoneschristmas.app.R
+import com.anyoneschristmas.app.ui.theme.*
+
+data class CardTemplate(
+    val id: String,
+    val name: String,
+    val imageRes: Int,
+    val textColor: Color = SnowWhite,
+    val overlayColor: Color = Color.Black.copy(alpha = 0.3f),
+    val accentColor: Color = Amber400
+)
+
+val TEMPLATES = listOf(
+    CardTemplate(
+        id = "snowman-fun",
+        name = "Frosty Friend",
+        imageRes = R.drawable.theme_snowman,
+        accentColor = Color(0xFF7DD3FC) // Sky Blue
+    ),
+    CardTemplate(
+        id = "snowy-forest",
+        name = "Snowy Forest",
+        imageRes = R.drawable.theme_forest,
+        accentColor = Color(0xFFA7F3D0) // Emerald 200
+    ),
+    CardTemplate(
+        id = "ornaments",
+        name = "Shiny Baubles",
+        imageRes = R.drawable.theme_ornaments,
+        accentColor = Color(0xFFFDE68A) // Amber 200
+    ),
+    CardTemplate(
+        id = "glowing-tree",
+        name = "Glowing Tree",
+        imageRes = R.drawable.theme_tree,
+        accentColor = Color(0xFFFDE68A) // Amber 200
+    ),
+    CardTemplate(
+        id = "cozy-fireplace",
+        name = "Cozy Fireplace",
+        imageRes = R.drawable.theme_fireplace,
+        accentColor = Color(0xFFFED7AA) // Orange 200
+    ),
+    CardTemplate(
+        id = "winter-village",
+        name = "Winter Village",
+        imageRes = R.drawable.theme_village,
+        accentColor = Color(0xFFBFDBFE) // Blue 200
+    ),
+    CardTemplate(
+        id = "holiday-gifts",
+        name = "Surprise Gifts",
+        imageRes = R.drawable.theme_gifts,
+        accentColor = Color(0xFFFECACA) // Red 200
+    ),
+    CardTemplate(
+        id = "reindeer-snow",
+        name = "Reindeer",
+        imageRes = R.drawable.theme_reindeer,
+        accentColor = Color(0xFFE7E5E4) // Stone 200
+    ),
+    CardTemplate(
+        id = "holiday-cookies",
+        name = "Holiday Treats",
+        imageRes = R.drawable.theme_cookies,
+        accentColor = Color(0xFFFECACA) // Red 200
+    ),
+    CardTemplate(
+        id = "winter-cabin",
+        name = "Log Cabin",
+        imageRes = R.drawable.theme_cabin,
+        accentColor = Color(0xFFFDBA74) // Orange 300
+    )
+)

@@ -1,0 +1,31 @@
+package com.example.festivegreetings.service
+
+import com.example.festivegreetings.BuildConfig
+import com.google.ai.client.generativeai.GenerativeModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+
+class GeminiService {
+    // Requires API Key in BuildConfig
+    private val generativeModel = GenerativeModel(
+        modelName = "gemini-1.5-flash",
+        apiKey = BuildConfig.API_KEY 
+    )
+
+    suspend fun generateGreeting(recipient: String, tone: String): String = withContext(Dispatchers.IO) {
+        try {
+            val prompt = """
+                Write a short, heartwarming Christmas or Holiday greeting card message (max 30 words).
+                Recipient: ${if(recipient.isBlank()) "friend" else recipient}.
+                Tone: $tone.
+                Output only the message text, no quotes.
+            """.trimIndent()
+
+            val response = generativeModel.generateContent(prompt)
+            return@withContext response.text?.trim() ?: "Merry Christmas and a Happy New Year!"
+        } catch (e: Exception) {
+            e.printStackTrace()
+            return@withContext "Wishing you a season full of light and laughter!"
+        }
+    }
+}

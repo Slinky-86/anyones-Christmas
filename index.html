@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FestiveGreetings - AI Christmas Card Creator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700&family=Mountains+of+Christmas:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+      /* Rich Dark Theme Base */
+      body {
+        background-color: #020617; /* slate-950 */
+        background-image: 
+          radial-gradient(at 0% 0%, rgba(15, 23, 42, 1) 0px, transparent 50%),
+          radial-gradient(at 100% 0%, rgba(30, 41, 59, 1) 0px, transparent 50%);
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155; 
+        border-radius: 5px;
+        border: 2px solid #0f172a;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569; 
+      }
+
+      /* Animations */
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .snowflake {
+        position: fixed;
+        top: -10px;
+        color: #fff;
+        font-size: 1em;
+        font-family: Arial;
+        text-shadow: 0 0 1px #000;
+        z-index: 50;
+        user-select: none;
+        pointer-events: none;
+        animation-name: snowflakes-fall, snowflakes-shake;
+        animation-duration: 10s, 3s;
+        animation-timing-function: linear, ease-in-out;
+        animation-iteration-count: infinite, infinite;
+        animation-play-state: running, running;
+      }
+      
+      @keyframes snowflakes-fall {
+        0% { top: -10% }
+        100% { top: 100% }
+      }
+      
+      @keyframes snowflakes-shake {
+        0% { transform: translateX(0px) }
+        50% { transform: translateX(80px) }
+        100% { transform: translateX(0px) }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react": "https://esm.sh/react@^19.2.1",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body class="text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-amber-500 selection:text-slate-900">
+    <div id="root"></div>
+  </body>
+</html>

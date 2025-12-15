@@ -1,0 +1,37 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="400dp"
+    android:height="600dp"
+    android:viewportWidth="400"
+    android:viewportHeight="600">
+    
+    <path android:fillColor="#78716C" android:pathData="M0,0h400v600h-400z"/>
+    
+    <!-- Silhouette Head Gradient -->
+    <path android:pathData="M150,300 Q200,600 250,300 Q200,500 150,300">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="150" android:endX="250">
+                <item android:offset="0" android:color="#FF44403C"/>
+                <item android:offset="1" android:color="#FF292524"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- Antlers -->
+    <path android:fillColor="#292524" 
+          android:pathData="M150,300 L100,150 M100,150 L120,200 M100,150 L80,180 M250,300 L300,150 M300,150 L280,200 M300,150 L320,180"
+          android:strokeWidth="10"
+          android:strokeColor="#292524"
+          android:strokeLineCap="round"/>
+          
+    <!-- Glowing Red Nose -->
+    <path android:pathData="M200,450 a25,25 0 1,0 50,0 a25,25 0 1,0 -50,0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:centerX="225" android:centerY="450" android:gradientRadius="25" android:type="radial">
+                <item android:offset="0" android:color="#FFFFFFFF"/>
+                <item android:offset="0.3" android:color="#FFEF4444"/>
+                <item android:offset="1" android:color="#FF991B1B"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

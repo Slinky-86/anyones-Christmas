@@ -1,0 +1,53 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="400dp"
+    android:height="600dp"
+    android:viewportWidth="400"
+    android:viewportHeight="600">
+    
+    <!-- Background -->
+    <path android:pathData="M0,0h400v600h-400z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial" android:centerX="200" android:centerY="300" android:gradientRadius="400">
+                <item android:offset="0" android:color="#FF7F1D1D"/>
+                <item android:offset="1" android:color="#FF450A0A"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Gift 1 (Big Red Box) - Top Face -->
+    <path android:fillColor="#EF4444" android:pathData="M100,350 L200,400 L300,350 L200,300 Z"/>
+    <!-- Gift 1 - Left Face (Darker) -->
+    <path android:fillColor="#B91C1C" android:pathData="M100,350 L200,400 V550 L100,500 Z"/>
+    <!-- Gift 1 - Right Face (Medium) -->
+    <path android:fillColor="#DC2626" android:pathData="M300,350 L200,400 V550 L300,500 Z"/>
+    
+    <!-- Ribbon Vertical -->
+    <path android:fillColor="#FCD34D" android:pathData="M190,305 L210,305 L210,550 L190,550 Z"/>
+    
+    <!-- Gift 2 (Blue Box on Top) - Front Face -->
+    <path android:pathData="M180,250 h140 v120 h-140 z">
+         <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startY="250" android:endY="370" android:angle="270">
+                <item android:offset="0" android:color="#FF3B82F6"/>
+                <item android:offset="1" android:color="#FF1D4ED8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Gift 2 Lid -->
+    <path android:fillColor="#60A5FA" android:pathData="M175,240 h150 v20 h-150 z"/>
+    
+    <!-- Bow -->
+    <path android:pathData="M230,240 Q250,200 270,240 Q250,280 230,240">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial" android:centerX="250" android:centerY="240" android:gradientRadius="20">
+                <item android:offset="0" android:color="#FFFCD34D"/>
+                <item android:offset="1" android:color="#FFF59E0B"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- Sparkles -->
+    <path android:fillColor="#FFFFFFFF" android:pathData="M100,200 L105,210 L100,220 L95,210 Z"/>
+    <path android:fillColor="#FFFFFFFF" android:pathData="M350,150 L355,160 L350,170 L345,160 Z"/>
+</vector>

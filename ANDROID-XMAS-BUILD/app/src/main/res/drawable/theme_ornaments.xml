@@ -1,0 +1,56 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="400dp"
+    android:height="600dp"
+    android:viewportWidth="400"
+    android:viewportHeight="600">
+    
+    <!-- Deep Green Bokeh Background -->
+    <path android:pathData="M0,0h400v600h-400z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial" android:centerX="200" android:centerY="300" android:gradientRadius="500">
+                <item android:offset="0" android:color="#FF14532D"/>
+                <item android:offset="1" android:color="#FF022C22"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Pine Needles (Blurred look via simple transparency) -->
+    <path android:fillColor="#33166534" android:pathData="M0,0 L200,200 L400,0 Z"/>
+
+    <!-- Gold Bauble (Top Right) -->
+    <path android:pathData="M300,150 m-60,0 a60,60 0 1,1 120,0 a60,60 0 1,1 -120,0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:centerX="280" android:centerY="130" android:gradientRadius="80" android:type="radial">
+                <item android:offset="0" android:color="#FFFFFBEB"/>
+                <item android:offset="0.3" android:color="#FFFCD34D"/>
+                <item android:offset="1" android:color="#FFB45309"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:fillColor="#D97706" android:pathData="M295,90 h10 v20 h-10 z"/>
+
+    <!-- Red Bauble (Center Main) -->
+    <path android:pathData="M200,350 m-90,0 a90,90 0 1,1 180,0 a90,90 0 1,1 -180,0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:centerX="170" android:centerY="320" android:gradientRadius="120" android:type="radial">
+                <item android:offset="0" android:color="#FFFFE4E6"/>
+                <item android:offset="0.3" android:color="#FFEF4444"/>
+                <item android:offset="1" android:color="#FF7F1D1D"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:fillColor="#991B1B" android:pathData="M190,260 h20 v20 h-20 z"/>
+    <path android:fillColor="#FCD34D" android:pathData="M200,100 L200,260" android:strokeWidth="2"/>
+
+    <!-- Blue Bauble (Bottom Left) -->
+    <path android:pathData="M100,500 m-50,0 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:centerX="80" android:centerY="480" android:gradientRadius="70" android:type="radial">
+                <item android:offset="0" android:color="#FFDBEAFE"/>
+                <item android:offset="0.3" android:color="#FF3B82F6"/>
+                <item android:offset="1" android:color="#FF1E3A8A"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

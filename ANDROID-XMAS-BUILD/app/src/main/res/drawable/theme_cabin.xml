@@ -1,0 +1,70 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="400dp"
+    android:height="600dp"
+    android:viewportWidth="400"
+    android:viewportHeight="600">
+    
+    <!-- Night Sky Gradient -->
+    <path android:pathData="M0,0h400v600h-400z">
+         <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startY="0" android:endY="400" android:angle="270">
+                <item android:offset="0" android:color="#FF020617"/>
+                <item android:offset="1" android:color="#FF1E293B"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- Moon Halo -->
+    <path android:pathData="M320,80 a40,40 0 1,1 0.1,0">
+         <aapt:attr name="android:fillColor">
+            <gradient android:type="radial" android:centerX="320" android:centerY="80" android:gradientRadius="60">
+                <item android:offset="0" android:color="#CCFDE68A"/>
+                <item android:offset="1" android:color="#00FDE68A"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Moon Body -->
+    <path android:fillColor="#FEF3C7" android:pathData="M320,80 a20,20 0 1,1 0.1,0"/>
+
+    <!-- Snow Floor -->
+    <path android:fillColor="#E2E8F0" android:pathData="M0,450 Q200,420 400,450 V600 H0 Z"/>
+
+    <!-- Cabin Body (Logs) -->
+    <path android:pathData="M50,450 L350,450 L350,300 L50,300 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="0" android:endX="400">
+                <item android:offset="0" android:color="#FF431407"/>
+                <item android:offset="0.5" android:color="#FF78350F"/>
+                <item android:offset="1" android:color="#FF431407"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Roof (Snowy) -->
+    <path android:fillColor="#F1F5F9" android:pathData="M30,320 L200,200 L370,320 L350,340 L200,240 L50,340 Z"/>
+    
+    <!-- Chimney -->
+    <path android:fillColor="#7F1D1D" android:pathData="M280,280 h30 v60 h-30 z"/>
+    
+    <!-- Windows with Glow -->
+    <path android:pathData="M100,350 h60 v60 h-60 z">
+         <aapt:attr name="android:fillColor">
+            <gradient android:type="radial" android:centerX="130" android:centerY="380" android:gradientRadius="40">
+                <item android:offset="0" android:color="#FFFCD34D"/>
+                <item android:offset="1" android:color="#FFF59E0B"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:pathData="M240,350 h60 v60 h-60 z">
+         <aapt:attr name="android:fillColor">
+            <gradient android:type="radial" android:centerX="270" android:centerY="380" android:gradientRadius="40">
+                <item android:offset="0" android:color="#FFFCD34D"/>
+                <item android:offset="1" android:color="#FFF59E0B"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- Door -->
+    <path android:fillColor="#292524" android:pathData="M180,380 h40 v70 h-40 z"/>
+</vector>

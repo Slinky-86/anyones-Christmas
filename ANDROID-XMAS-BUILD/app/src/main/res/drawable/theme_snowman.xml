@@ -1,0 +1,76 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="400dp"
+    android:height="600dp"
+    android:viewportWidth="400"
+    android:viewportHeight="600">
+    
+    <!-- Sky Gradient -->
+    <path android:pathData="M0,0h400v600h-400z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startY="0" android:endY="600" android:angle="270">
+                <item android:offset="0" android:color="#FF0F172A"/> <!-- Dark Slate -->
+                <item android:offset="1" android:color="#FF334155"/> <!-- Lighter Slate -->
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- Snow Ground -->
+    <path android:pathData="M0,450 Q200,400 400,450 V600 H0 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startY="400" android:endY="600" android:angle="270">
+                <item android:offset="0" android:color="#FFE2E8F0"/>
+                <item android:offset="1" android:color="#FF94A3B8"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Bottom Body Sphere (3D Effect) -->
+    <path android:pathData="M200,500 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:centerX="180" android:centerY="480" android:gradientRadius="100" android:type="radial">
+                <item android:offset="0" android:color="#FFFFFFFF"/>
+                <item android:offset="1" android:color="#FFCBD5E1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Middle Body Sphere -->
+    <path android:pathData="M200,390 m-60,0 a60,60 0 1,1 120,0 a60,60 0 1,1 -120,0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:centerX="185" android:centerY="370" android:gradientRadius="70" android:type="radial">
+                <item android:offset="0" android:color="#FFFFFFFF"/>
+                <item android:offset="1" android:color="#FFCBD5E1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Head Sphere -->
+    <path android:pathData="M200,300 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:centerX="190" android:centerY="290" android:gradientRadius="50" android:type="radial">
+                <item android:offset="0" android:color="#FFFFFFFF"/>
+                <item android:offset="1" android:color="#FFCBD5E1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Carrot Nose (Cone Gradient) -->
+    <path android:pathData="M200,300 L260,310 L200,320 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="200" android:endX="260">
+                <item android:offset="0" android:color="#FFF97316"/>
+                <item android:offset="1" android:color="#FFEAB308"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Scarf -->
+    <path android:fillColor="#EF4444" android:pathData="M160,330 Q200,360 240,330 L240,350 Q200,380 160,350 Z"/>
+    <path android:fillColor="#B91C1C" android:pathData="M180,340 L180,400 L210,400 L210,340 Z"/>
+    
+    <!-- Hat -->
+    <path android:fillColor="#1E293B" android:pathData="M150,270 h100 v10 h-100 z"/>
+    <path android:fillColor="#0F172A" android:pathData="M170,200 h60 v70 h-60 z"/>
+    <path android:fillColor="#DC2626" android:pathData="M170,260 h60 v10 h-60 z"/>
+</vector>

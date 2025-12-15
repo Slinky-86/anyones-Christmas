@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FestiveGreetings" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Status bar color matching Slate 900 -->
+        <item name="android:statusBarColor">#0F172A</item>
+        <!-- Background color matching Slate 950 -->
+        <item name="android:windowBackground">#020617</item>
+    </style>
+</resources>

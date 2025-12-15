@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Background Gradient -->
+    <path android:pathData="M0,0h108v108h-108z">
+        <aapt:attr name="android:fillColor">
+            <gradient 
+                android:centerX="54"
+                android:centerY="54"
+                android:gradientRadius="75"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FF1E293B" />
+                <item android:offset="1.0" android:color="#FF0F172A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Decorative Snowflake Pattern (Subtle) -->
+    <path
+        android:fillColor="#1AFFFFFF"
+        android:pathData="M54,14 L54,94 M14,54 L94,54 M26,26 L82,82 M82,26 L26,82"
+        android:strokeWidth="2"
+        android:strokeColor="#1AFFFFFF"
+        android:strokeLineCap="round" />
+
+    <!-- Loading Icon / Holiday Icon Center -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.5"
+        android:scaleY="0.5">
+        <path
+            android:fillColor="#FBBF24"
+            android:pathData="M54,4 A50,50 0 1,1 54,104 A50,50 0 1,1 54,4"
+            android:strokeWidth="4"
+            android:strokeColor="#B45309"/>
+        <path
+            android:fillColor="#FFFBEB"
+            android:pathData="M54,20 L62,40 L84,40 L66,56 L72,78 L54,64 L36,78 L42,56 L24,40 L46,40 Z" />
+    </group>
+</vector>

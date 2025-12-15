@@ -1,0 +1,35 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="400dp"
+    android:height="600dp"
+    android:viewportWidth="400"
+    android:viewportHeight="600">
+    
+    <path android:fillColor="#450A0A" android:pathData="M0,0h400v600h-400z"/>
+    
+    <!-- Cookie 1 (Round) -->
+    <path android:pathData="M100,100 a50,50 0 1,0 100,0 a50,50 0 1,0 -100,0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:centerX="150" android:centerY="100" android:gradientRadius="50" android:type="radial">
+                <item android:offset="0" android:color="#FFFCD34D"/> <!-- Light center -->
+                <item android:offset="1" android:color="#FFD97706"/> <!-- Baked edge -->
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Chips -->
+    <path android:fillColor="#3E2723" android:pathData="M120,120 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0 M150,90 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"/>
+    
+    <!-- Cookie 2 (Star) -->
+    <path android:pathData="M250,400 L280,350 L310,400 L360,400 L320,430 L340,480 L280,450 L220,480 L240,430 L200,400 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:centerX="280" android:centerY="420" android:gradientRadius="80" android:type="radial">
+                <item android:offset="0" android:color="#FFFDE68A"/>
+                <item android:offset="1" android:color="#FFF59E0B"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- Candy Cane Stripe -->
+    <path android:fillColor="#FFFFFF" android:pathData="M50,500 L100,450" android:strokeWidth="20" android:strokeColor="#FFFFFF"/>
+    <path android:pathData="M50,500 L100,450" android:strokeWidth="20" android:strokeColor="#DC2626" android:strokeDashArray="10,10"/>
+</vector>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Center the snowflake in the 72dp safe zone -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.65"
+        android:scaleY="0.65">
+        
+        <!-- Snowflake Main Structure -->
+        <path
+            android:fillColor="#FBBF24"
+            android:pathData="M54,14 L54,94 M14,54 L94,54 M26,26 L82,82 M82,26 L26,82"
+            android:strokeWidth="6"
+            android:strokeColor="#FBBF24"
+            android:strokeLineCap="round" />
+            
+        <!-- Snowflake Details -->
+        <path
+            android:fillColor="#FBBF24"
+            android:pathData="M54,24 L48,32 M54,24 L60,32 M54,84 L48,76 M54,84 L60,76 M24,54 L32,48 M24,54 L32,60 M84,54 L76,48 M84,54 L76,60"
+            android:strokeWidth="4"
+            android:strokeColor="#FCD34D"
+            android:strokeLineCap="round" />
+            
+        <!-- Center Sparkle -->
+        <path
+            android:fillColor="#FFFBEB"
+            android:pathData="M54,50 L56,54 L54,58 L52,54 Z" />
+    </group>
+</vector>

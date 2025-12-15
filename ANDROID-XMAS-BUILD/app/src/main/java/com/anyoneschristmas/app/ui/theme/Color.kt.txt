@@ -1,0 +1,17 @@
+package com.anyoneschristmas.app.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+val Slate950 = Color(0xFF020617)
+val Slate900 = Color(0xFF0F172A)
+val Slate800 = Color(0xFF1E293B)
+val Slate700 = Color(0xFF334155)
+
+val Amber400 = Color(0xFFFBBF24)
+val Amber500 = Color(0xFFF59E0B)
+
+val Red700 = Color(0xFFB91C1C)
+val Red600 = Color(0xFFDC2626)
+
+val SnowWhite = Color(0xFFF8FAFC)
+val WhiteTransparent = Color(0x1AFFFFFF) // White 10%
